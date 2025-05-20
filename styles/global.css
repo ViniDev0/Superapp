@@ -16,3 +16,6 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
+p{
+   font-family: "Poppins-Regular", Helvetica;
+}
