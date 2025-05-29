@@ -6,8 +6,8 @@ interface loginTweaks {
 
 function login({}: loginTweaks) {
   return (
-    <div>login</div>
+    <h1 className='text-xl p-4 bg-red-200 text-rose-900 w-50 h-100 m-auto'>oi</h1>
   )
 }
 
-export default login
+export default login;
