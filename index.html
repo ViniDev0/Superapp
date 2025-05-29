@@ -78,16 +78,22 @@
         <div class="tabs-home">
 
           <!-- obs: usar tab selected nas paginas atuais, unselected para as demais -->
-          
+          <!-- Tabelas -->
           <div class="tabs">
-            <a href="/"><div class="tab-selected"><div class="default">Banco</div></div></a>
-            <a href="/"><div class="tab-unselected"><div class="default">Social</div></div></a>
-            <a href="/"><div class="tab-unselected"><div class="default">MiniApps</div></div></a>
-            <a href="/"><div class="tab-unselected"><div class="default">Notícias</div></div></a>
+            <a href="#banco"><div class="tab-selected"><div class="default">Banco</div></div></a>
+            <a href="#social"><div class="tab-unselected"><div class="default">Social</div></div></a>
+            <a href="#miniapp"><div class="tab-unselected"><div class="default">MiniApps</div></div></a>
+            <a href="#noticias"><div class="tab-unselected"><div class="default">Notícias</div></div></a>
           </div>
+        
         </div>
+          <!-- Menu -->
+        <div class="nav-menu" id="scroll-container">
+          <!-- Menu Rolagem / Flex -->
+          <div class="nav-menu-itens">
+            <div class="menu-itens" id="banco">
         <!-- Minha Conta -->
-        <a href="./routes/contaArea.html"><div class="account-button">
+        <a href="./routes/contaArea.html"><div class="cd-button">
           <div class="option">
             <div class="pay-BTN">
               <div class="title-options">MINHA CONTA</div>
@@ -96,7 +102,7 @@
           </div>
         </div></a>
         <!-- Empréstimo -->
-        <a href="./routes/emprestimoArea.html"> <div class="emprestimo-button">
+        <a href="./routes/emprestimoArea.html"> <div class="cd-button">
           <div class="option">
             <div class="pay-BTN">
               <div class="title-options">EMPRÉSTIMO</div>
@@ -105,7 +111,7 @@
           </div>
         </div></a>
        <!-- Investimento -->
-        <a href="./routes/investimentoArea.html"><div class="investimento-button">
+        <a href="./routes/investimentoArea.html"><div class="cd-button">
           <div class="option">
             <div class="pay-BTN">
               <div class="title-options">INVESTIMENTO</div>
@@ -114,7 +120,7 @@
           </div>
         </div></a>
         <!-- Cartão de Crédito  -->
-         <a href="./routes/credArea"><div class="cc-button">
+         <a href="./routes/credArea"><div class="cd-button">
           <div class="option">
             <div class="pay-BTN">
               <div class="title-options">CARTÃO DE CRÉDITO</div>
@@ -131,6 +137,41 @@
             </div>
           </div>
         </div></a>
+            </div>
+            <div class="menu-itens" id="social">
+
+            </div>
+            <div class="menu-itens" id="miniapp">
+              <!-- Gerenciador de Mini Apps -->
+              <div class="gen-miniapp">
+
+                <a href="/"><div class="miniapps">
+                  <img src="./img/ifood.png" alt="ifood logo">
+                  
+                </div></a>
+
+                <a href="/"><div class="miniapps">
+                  <img src="./img/uber.png" alt="uber logo">
+                  
+                </div></a>
+
+                 <a href="/"><div class="miniapps">
+                  <img src="./img/waze.png" alt="waze logo">
+                  
+                </div></a>
+
+                 <a href="/"><div class="miniapps">
+                  <img src="./img/add-square-svgrepo-com.svg" alt="">
+                  
+                </div></a>
+
+              </div>
+            </div>
+            <div class="menu-itens" id="noticias">
+              
+            </div>
+        </div>
+      </div>
 
 
       </div>
