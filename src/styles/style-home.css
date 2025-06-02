@@ -575,3 +575,58 @@
   border: 1px solid;
   border-color: #000000;
 }
+.miniapps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Espaçamento entre os miniapps */
+  padding: 16px;
+  justify-content: flex-start;
+}
+
+.miniapps {
+  display: inline-block;
+  margin: 10px;
+}
+
+.miniapp-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.miniapp-icon:hover {
+  transform: scale(1.05);
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.tab-selected,
+.tab-unselected,
+button.tab-selected,
+button.tab-unselected {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tab-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.default {
+  font-size: 14px;
+  font-weight: 600;
+}
