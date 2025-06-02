@@ -427,11 +427,7 @@
   left: 0;
   background-color: #edebf2;
 }
-.iphone .tabs .default:hover{
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: #2667ff;
-}
+
 
 .iphone .tab-selected {
   display: flex;
@@ -478,7 +474,18 @@
 
 
 
-
+.iphone .account-button {
+  position: absolute;
+  width: 341px;
+  height: 56px;
+  top: 430px;
+  left: 21px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+}
 
 .iphone .option {
   position: relative;
@@ -520,51 +527,106 @@
   left: 288px;
 }
 
-.iphone .cd-button {
-  padding: 5px;
-  padding-left: 10px;
-
-  overflow: hidden;
-  
-}
-.iphone .cd-button a{
-  width: 350px;
-}
-.iphone .nav-menu{
+.iphone .emprestimo-button {
   position: absolute;
-  width: 400px; /* Duas telas de 100vw lado a lado */
-  height: 338px;
-  top: 420px;
-  
+  width: 341px;
+  height: 56px;
+  top: 500px;
+  left: 21px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
 }
-.iphone .nav-menu-itens{
+.iphone .investimento-button {
+  position: absolute;
+  width: 341px;
+  height: 56px;
+  top: 570px;
+  left: 21px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+}
+.iphone .cc-button {
+  position: absolute;
+  width: 341px;
+  height: 56px;
+  top: 640px;
+  left: 21px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+}
+.iphone .cd-button {
+  position: absolute;
+  width: 341px;
+  height: 56px;
+  top: 710px;
+  left: 21px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+}
+.miniapps-container {
   display: flex;
-  flex-direction: row;
-  width: 390px; /* Duas telas de 100vw lado a lado */
-  
+  flex-wrap: wrap;
+  gap: 16px; /* Espaçamento entre os miniapps */
+  padding: 16px;
+  justify-content: flex-start;
+}
+
+.miniapps {
+  display: inline-block;
+  margin: 10px;
+}
+
+.miniapp-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.miniapp-icon:hover {
+  transform: scale(1.05);
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  flex-wrap: nowrap;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  align-items: center;
 }
-.iphone .menu-itens{
-      width: 390px;
-      height: 350px;
-      flex-shrink: 0;
-      justify-content: center;
-      align-items: center;
-      font-size: 2em;
-}
-.iphone .gen-miniapp{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  padding: 20px;
- 
-}
-.iphone .miniapps{
-  width: 50px;
-  height: 50px;
-}
-.iphone .name-app{
-  font-size: 13px;
+
+.tab-selected,
+.tab-unselected,
+button.tab-selected,
+button.tab-unselected {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
   text-align: center;
+  white-space: nowrap;
+}
+
+.tab-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.default {
+  font-size: 14px;
+  font-weight: 600;
 }
