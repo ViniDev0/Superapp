@@ -35,7 +35,6 @@ export default function Login() {
   }
 };
 
-
   return (
     <div className="login">
       <div className="div">
@@ -104,7 +103,13 @@ export default function Login() {
           />
 
           <div className="text-wrapper-6">Esqueci minha senha</div>
-          <div className="text-wrapper-7">Ainda não sou cliente</div>
+          <div className="text-wrapper-7">
+            <a href="/signup" className="signupBTN">
+            <p id="signupText">
+              Ainda não sou cliente
+            </p>
+          </a>
+          </div>
 
           <div className="div-wrapper" onClick={handleLogin} style={{ cursor: "pointer" }}>
             <div className="text-wrapper-8">CONTINUAR</div>
