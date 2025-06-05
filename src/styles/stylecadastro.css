@@ -372,7 +372,9 @@
 }
 
 .cadastro .div-wrapper {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
   width: 247px;
   height: 45px;
   top: 358px;
@@ -385,13 +387,12 @@
 }
 
 .cadastro .text-wrapper-8 {
-  position: absolute;
-  top: 13px;
-  left: 86px;
   font-family: "Poppins-Bold", Helvetica;
-  font-weight: 700;
+  font-weight: 999;
   color: #ffff00;
   font-size: 11px;
   letter-spacing: 0;
   line-height: normal;
+  border: 0;
+  background-color: transparent;
 }

@@ -91,11 +91,6 @@ export default function CadastroPage() {
           <input id="senha" className="rectangle-12" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
 
           {/* Extras — caso você queira usar depois */}
-          <input className="rectangle-13" type="text" />
-          <input className="rectangle-14" type="text" />
-          <input className="rectangle-15" type="text" />
-          <input className="rectangle-16" type="text" />
-          <input className="rectangle-17" type="text" />
 
           <div className="div-wrapper">
             <button className="text-wrapper-8" onClick={handleSubmit}>CONTINUAR</button>
